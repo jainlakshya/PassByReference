@@ -1,19 +1,27 @@
 package learning;
 
+import java.util.LinkedList;
+
 public class test {
-	public obj obj;
+	public LinkedList innList;
 	
-	public void check (obj obj) {
-		this.obj = obj;
-		this.obj.setOne(1);
-		this.obj.setTwo(2);
+	public void check (LinkedList list) {
+		this.innList = list;
+		this.innList.addFirst("1");
 	}
 	
-	public void check2 (obj obj) {
-		obj obj2 = obj;
-		obj2.setOne(3);
-		obj2.setTwo(4);
-		
+	public void check2 (LinkedList list) {
+		LinkedList list2 = list;
+		list2.add("2");	
+		LinkedList list3 = new LinkedList();
+		this.innList=list3;
+		this.innList.addFirst("1");
+		System.out.println(this.innList);
+
+		this.innList = list;
+		this.innList.addFirst("1");
+
+		System.out.println(this.innList);
 	}
 
 }
