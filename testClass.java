@@ -6,16 +6,14 @@ import org.junit.jupiter.api.Test;
 
 class testClass {
 
-	@Test
-	void test() {
-		obj obj1 = new obj();
-		test test = new test();
-		test.check(obj1);
-		System.out.println(obj1.toString());
-		
-		test.check2(obj1);
-		System.out.println(obj1.toString());
-		fail("Not yet implemented");
-	}
+	 @Test 
+	  void test() {
+	  LinkedList list = new LinkedList(); 
+	  test test = new test(); 
+	  test.check(list); 
+	  System.out.println(list);
+	  test.check2(list); 
+	  System.out.println(list); 
+	  }
 
 }
